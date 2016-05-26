@@ -36,19 +36,29 @@
 <li>
 <p>因为3D Rigid Object Tracking 需要调动摄像头进行相关图像处理内容，完成简单的matlab摄像头调用代码。</p>
 
-<p><code>clear all; clc</code>
-<code>vid = videoinput('winvideo', 1, 'YUY2_640x480');%创建ID为1的摄像头的视频对象</code>
-<code>set(vid,'ReturnedColorSpace','rgb');</code>
-<code>vidRes=get(vid,'VideoResolution');</code>
-<code>width=vidRes(1);</code>
-<code>height=vidRes(2);</code>
-<code>nBands=get(vid,'NumberOfBands');</code>
-<code>figure('Name', 'Matlab调用摄像头 By tennfy', 'NumberTitle', 'Off', 'ToolBar', 'None', 'MenuBar', 'None');</code>
-<code>hImage=image(zeros(vidRes(2),vidRes(1),nBands));</code>
-<code>preview(vid,hImage);    %打开视频预览窗口</code>
-`</p>
+<p><code>clear all; clc</code></p>
+
+<p><code>vid = videoinput('winvideo', 1, 'YUY2_640x480');%创建ID为1的摄像头的视频对象</code></p>
+
+<p><code>set(vid,'ReturnedColorSpace','rgb');</code></p>
+
+<p><code>vidRes=get(vid,'VideoResolution');</code></p>
+
+<p><code>width=vidRes(1);</code></p>
+
+<p><code>height=vidRes(2);</code></p>
+
+<p><code>nBands=get(vid,'NumberOfBands');</code></p>
+
+<p><code>figure('Name', 'Matlab调用摄像头 By tennfy', 'NumberTitle', 'Off', 'ToolBar', 'None', 'MenuBar', 'None');</code></p>
+
+<p><code>hImage=image(zeros(vidRes(2),vidRes(1),nBands));</code></p>
+
+<p><code>preview(vid,hImage);    %打开视频预览窗口</code></p>
 </li>
 </ol>
+
+<p><img src="http://i4.buimg.com/eca3297b1e2722a3.png" alt="matlab调用摄像头"></p>
 
       <footer class="site-footer">
 
