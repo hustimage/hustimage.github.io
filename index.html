@@ -33,21 +33,22 @@
 <ol>
 <li><p>阅读项目中所给文献，了解本项目所需关键技术；</p></li>
 <li><p>组内成员对matlab较为熟悉，暂定其作为编程平台完成相关内容，后期如有需要再移植至其他平台；</p></li>
-<li><p>因为3D Rigid Object Tracking 需要调动摄像头进行相关图像处理内容，完成简单的matlab摄像头调用代码。</p></li>
-</ol>
+<li>
+<p>因为3D Rigid Object Tracking 需要调动摄像头进行相关图像处理内容，完成简单的matlab摄像头调用代码。</p>
 
-<p><code>
-     clear all; clc</code>
-    <code>vid = videoinput('winvideo', 1, 'YUY2_640x480');%创建ID为1的摄像头的视频对象</code>
-    <code>set(vid,'ReturnedColorSpace','rgb');</code>
-    <code>vidRes=get(vid,'VideoResolution');</code>
-    <code>width=vidRes(1);</code>
-    <code>height=vidRes(2);</code>
-    <code>nBands=get(vid,'NumberOfBands');</code>
-    <code>figure('Name', 'Matlab调用摄像头 By tennfy', 'NumberTitle', 'Off', 'ToolBar', 'None', 'MenuBar', 'None');</code>
-    <code>hImage=image(zeros(vidRes(2),vidRes(1),nBands));</code>
-    <code>preview(vid,hImage);    %打开视频预览窗口</code>
+<p><code>clear all; clc</code>
+<code>vid = videoinput('winvideo', 1, 'YUY2_640x480');%创建ID为1的摄像头的视频对象</code>
+<code>set(vid,'ReturnedColorSpace','rgb');</code>
+<code>vidRes=get(vid,'VideoResolution');</code>
+<code>width=vidRes(1);</code>
+<code>height=vidRes(2);</code>
+<code>nBands=get(vid,'NumberOfBands');</code>
+<code>figure('Name', 'Matlab调用摄像头 By tennfy', 'NumberTitle', 'Off', 'ToolBar', 'None', 'MenuBar', 'None');</code>
+<code>hImage=image(zeros(vidRes(2),vidRes(1),nBands));</code>
+<code>preview(vid,hImage);    %打开视频预览窗口</code>
 `</p>
+</li>
+</ol>
 
       <footer class="site-footer">
 
