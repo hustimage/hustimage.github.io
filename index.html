@@ -37,17 +37,17 @@
 </ol>
 
 <p><code>
-     clear all; clc
-     vid = videoinput('winvideo', 1, 'YUY2_640x480');%创建ID为1的摄像头的视频对象
-     set(vid,'ReturnedColorSpace','rgb');
-     vidRes=get(vid,'VideoResolution');
-     width=vidRes(1);
-     height=vidRes(2);
-     nBands=get(vid,'NumberOfBands');
-     figure('Name', 'Matlab调用摄像头 By tennfy', 'NumberTitle', 'Off', 'ToolBar', 'None', 'MenuBar', 'None');
-     hImage=image(zeros(vidRes(2),vidRes(1),nBands));
-     preview(vid,hImage);    %打开视频预览窗口
-</code></p>
+     clear all; clc</code>
+    <code>vid = videoinput('winvideo', 1, 'YUY2_640x480');%创建ID为1的摄像头的视频对象</code>
+    <code>set(vid,'ReturnedColorSpace','rgb');</code>
+    <code>vidRes=get(vid,'VideoResolution');</code>
+    <code>width=vidRes(1);</code>
+    <code>height=vidRes(2);</code>
+    <code>nBands=get(vid,'NumberOfBands');</code>
+    <code>figure('Name', 'Matlab调用摄像头 By tennfy', 'NumberTitle', 'Off', 'ToolBar', 'None', 'MenuBar', 'None');</code>
+    <code>hImage=image(zeros(vidRes(2),vidRes(1),nBands));</code>
+    <code>preview(vid,hImage);    %打开视频预览窗口</code>
+`</p>
 
       <footer class="site-footer">
 
