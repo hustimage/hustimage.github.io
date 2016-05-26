@@ -22,7 +22,26 @@
 <h2>
 <a id="小组成员巨荣辉谢存煌柯旺松张兴龙" class="anchor" href="#%E5%B0%8F%E7%BB%84%E6%88%90%E5%91%98%E5%B7%A8%E8%8D%A3%E8%BE%89%E8%B0%A2%E5%AD%98%E7%85%8C%E6%9F%AF%E6%97%BA%E6%9D%BE%E5%BC%A0%E5%85%B4%E9%BE%99" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>小组成员：巨荣辉、谢存煌、柯旺松、张兴龙</h2>
 
-<p>2016年5月19日    选择项目3D Rigid Object Tracking，项目开始</p>
+<h2>
+<a id="2016年5月19日更新----选择项目3d-rigid-object-tracking项目开始" class="anchor" href="#2016%E5%B9%B45%E6%9C%8819%E6%97%A5%E6%9B%B4%E6%96%B0----%E9%80%89%E6%8B%A9%E9%A1%B9%E7%9B%AE3d-rigid-object-tracking%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%A7%8B" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2016年5月19日更新    选择项目3D Rigid Object Tracking，项目开始。</h2>
+
+<h2>
+<a id="2016年5月26日更新" class="anchor" href="#2016%E5%B9%B45%E6%9C%8826%E6%97%A5%E6%9B%B4%E6%96%B0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2016年5月26日更新：</h2>
+
+<p>*阅读项目中所给文献，了解本项目所需关键技术；
+*组内成员对matlab较为熟悉，暂定其作为编程平台完成相关内容，后期如有需要再移植至其他平台；
+*因为3D Rigid Object Tracking 需要调动摄像头进行相关图像处理内容，完成简单的matlab摄像头调用代码。
+<code>clear all; clc
+     vid = videoinput('winvideo', 1, 'YUY2_640x480');%创建ID为1的摄像头的视频对象
+     set(vid,'ReturnedColorSpace','rgb');
+     vidRes=get(vid,'VideoResolution');
+     width=vidRes(1);
+     height=vidRes(2);
+     nBands=get(vid,'NumberOfBands');
+     figure('Name', 'Matlab调用摄像头 By tennfy', 'NumberTitle', 'Off', 'ToolBar', 'None', 'MenuBar', 'None');
+     hImage=image(zeros(vidRes(2),vidRes(1),nBands));
+     preview(vid,hImage);    %打开视频预览窗口
+</code></p>
 
       <footer class="site-footer">
 
