@@ -10,7 +10,7 @@
  
 ## Build and Run
 
- You need to creat a new VS project, then add all .h(hpp) files and .cpp files to your project in the object tracking folder of the master-branch.
+ You need to creat a new VS project, then add all .h(hpp) files and .cpp files to your project in the 3D-rigid-object-tracking folder of the master-branch.
  
  The hot keys will be shown when the program is running.
  
