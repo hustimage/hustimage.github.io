@@ -14,6 +14,6 @@
  
  The hot keys will be shown when the program is running.
  
- Run command as example : project path//object_tracking.exe  d://object.mp4
+ Run command as example : project path//object_tracking.exe  d://object.mp4 
  
 
