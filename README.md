@@ -10,7 +10,7 @@
  
 ## Build and Run
 
- you need to creat a new vs project,then add the .h(hpp) files and .cpp files to the project in the object tracking folder of the master-branch.
+ you need to creat a new VS project,then add the .h(hpp) files and .cpp files to the project in the object tracking folder of the master-branch.
  
  the hot keys  will be shown when the program is running.
  
